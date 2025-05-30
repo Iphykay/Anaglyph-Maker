@@ -26,6 +26,9 @@ class Anaglyph_Maker:
         plt.show()
 
     def orb_create(self):
+        """
+        Uses the ORB descriptor to find feature points and match them
+        """
         ORB = cv.ORB_create(self.MaxFeatures)
 
         # detect and compute the keypoints and descriptors with ORB
